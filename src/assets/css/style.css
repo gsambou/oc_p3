@@ -1,0 +1,158 @@
+.container {
+    width: 768px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+header {
+    text-align: center;
+}
+
+.ohmyfood-logo {
+    width: 200px;
+    margin: 24px auto;
+}
+
+.restaurant-description .restaurant-lieu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: #dee2e6;
+    padding: 24px 0px;
+}
+
+.restaurant-description .restaurant-details {
+    background: #e9ecef;
+    text-align: center;
+    padding: 36px 0px;
+}
+
+.restaurant-description .restaurant-details>* {
+    margin-bottom: 24px;
+}
+
+.restaurant-description .restaurant-details a:link {
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 100px;
+    padding: 24px 16px;
+    text-decoration: none;
+}
+
+.restaurant-fonctionnement .fonctionnement-steps {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 24px auto;
+}
+
+.restaurant-fonctionnement h1 {
+    margin: 26px 0px 26px 56px;
+}
+
+.restaurant-fonctionnement .fonctionnement-steps i {
+    color: #adb5bd;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.restaurant-fonctionnement .fonctionnement-steps {
+    width: 90%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 25px;
+}
+
+.restaurant-fonctionnement .fonctionnement-steps p {
+    padding: 36px 16px;
+    outline: 2px solid blue;
+}
+
+.restaurant-fonctionnement .fonctionnement-steps span {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #9356DC;
+    border-radius: 50%;
+    background: #9356DC;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -12px;
+}
+
+.restaurant-menus {
+    background: #e9ecef;
+    padding-bottom: 50px;
+}
+
+.restaurant-menus h1 {
+    padding-top: 56px;
+}
+
+.restaurant-menus .menu-list {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-card {
+    display: block;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 25px;
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-card span {
+    background: #99E2D0;
+    padding: 16px 16px;
+    border-radius: 8px;
+    color: #2f9e44;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-card img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 26px;
+}
+
+.menu-description .text {
+    padding: 0px 12px 24px 10px;
+}
+
+.menu-description i {
+    font-size: 36px;
+    background: white;
+}
+
+.menu-description .text>* {
+    margin-bottom: 10px;
+}
+
+main {
+    margin-bottom: 26px;
+}
+
+footer {
+    margin-top: 56px;
+}

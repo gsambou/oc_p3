@@ -1,0 +1,12 @@
+Polices
+Logo et titres Shrikhand
+Texte: Roboto
+
+
+Couleurs
+Primaire:
+#9356DC
+Secondaire:
+#FF79DA
+Tertiaaire
+#99E2D0
