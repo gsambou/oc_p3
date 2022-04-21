@@ -1,0 +1,183 @@
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 24px;
+}
+
+header a:link {
+    margin-left: 26px;
+    font-size: 26px;
+}
+
+.ohmyfood-logo {
+    width: 250px;
+    margin: 24px auto;
+}
+
+.command {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid #FF79DA;
+    border-radius: 100px;
+    padding: 26px 26px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background: #FF79DA;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.text p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.text h2 {
+    font-size: 32px;
+}
+
+
+/* Liste des restaurants */
+
+main.restaurant {
+    width: 100%;
+    margin: 0 auto;
+    outline: 2px solid blue;
+    border-radius: 35px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: -140px;
+    position: relative;
+    background: #F6F6F6;
+}
+
+aside img {
+    width: 100%;
+}
+
+.restaurant-card {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 0px;
+    padding-top: 36px;
+}
+
+.restaurant-name i {
+    font-size: 36px;
+}
+
+.restaurant-card article h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.restaurant--menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin-bottom: 26px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 16px;
+}
+
+.card h2 {
+    font-size: 16px;
+}
+
+.card>* {
+    margin-bottom: 10px;
+}
+
+.restaurant--menu--description {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: #353535;
+    color: white;
+}
+
+footer .wrapper h1,
+.restaurant-name h1 {
+    font-family: Shrikhand, "cursive";
+}
+
+footer .wrapper h1 {
+    color: white;
+    font-size: 24px;
+    padding-top: 24px;
+    margin-bottom: 24px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer ul li a:link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer ul li {
+    padding-bottom: 10px;
+}
+
+footer ul li a:visited {
+    color: white;
+}
+
+footer {
+    padding-bottom: 24px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.restaurant-fonctionnement .wrapper h1,
+.restaurant-menus .wrapper h1 {
+    font-size: 46px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
