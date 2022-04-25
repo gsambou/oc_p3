@@ -22,25 +22,31 @@ header a:link {
 }
 
 .ohmyfood-logo {
-    width: 250px;
+    max-width: 250px;
     margin: 24px auto;
 }
 
 .command {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 26px;
+}
+
+.command a:link {
+    font-weight: 500;
+}
+
+.btn.command {
+    padding: 12px 46px;
 }
 
 .btn {
     display: inline-block;
-    border: 2px solid #FF79DA;
     border-radius: 100px;
     padding: 26px 26px;
     text-decoration: none;
     color: white;
     font-weight: 600;
-    background: #FF79DA;
+    background-image: linear-gradient(355deg, #9356DC, #FF79DA);
 }
 
 .text {
@@ -65,7 +71,6 @@ header a:link {
 main.restaurant {
     width: 100%;
     margin: 0 auto;
-    outline: 2px solid blue;
     border-radius: 35px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -81,6 +86,7 @@ aside img {
 .restaurant-card {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 
 .restaurant-name {
@@ -100,6 +106,14 @@ aside img {
     text-transform: uppercase;
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+.restaurant-card article h1::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 45px;
+    background: #99E2D0;
 }
 
 .restaurant--menu-list {
@@ -126,6 +140,14 @@ aside img {
 .restaurant--menu--description {
     display: flex;
     justify-content: space-between;
+}
+
+.restaurant--menu--description p {
+    font-weight: 300;
+}
+
+.restaurant--menu--description span {
+    font-weight: 600;
 }
 
 footer {
