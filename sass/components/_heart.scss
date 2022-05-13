@@ -1,0 +1,13 @@
+.heart-like {
+    display: flex;
+    &--regular {
+        opacity: 1;
+    }
+    &--solid {
+        opacity: 0;
+        &:hover {
+            animation: heart__animated 1s forwards;
+            opacity: 1;
+        }
+    }
+}

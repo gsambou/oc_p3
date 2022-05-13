@@ -1,0 +1,31 @@
+.footer {
+    background: #353535;
+    color: white;
+    padding-bottom: 10px;
+    &__wrapper {
+        width: 90%;
+        margin: 0 auto;
+        h1 {
+            font-family: Shrikhand, "cursive";
+            color: white;
+            font-size: 24px;
+            padding-top: 24px;
+            margin-bottom: 24px;
+            padding-bottom: 0px;
+        }
+    }
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        padding-bottom: 2rem;
+        li a:visited,
+        li a:link {
+            display: flex;
+            gap: 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+}

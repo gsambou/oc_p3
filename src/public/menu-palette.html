@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Ohmyfood</title>
 </head>
@@ -21,41 +19,117 @@
                 <img src="../assets/images/logo/ohmyfood.png" alt="logo" class="ohmyfood-logo">
             </header>
             <aside>
-                <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
             </aside>
             <main class="restaurant">
-                <div class="wrapper">
-                    <section class="restaurant-card">
-                        <div class="restaurant-name">
+                <div class="restaurant__wrapper">
+                    <section class="restaurant__card">
+                        <div class="restaurant__card__name">
                             <h1>La palette du goût</h1>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <article>
-                            <h1>Entrées</h1>
-                            <div class="restaurant--menu--list">
-                                <div class="card">
-                                    <h2>Fricassée d'escargot</h2>
-                                    <div class="restaurant--menu--description">
-                                        <p>Au pimet d'espelette </p>
-                                        <span>25€</span>
-                                    </div>
+                            <div class="heart-like">
+                                <div class="heart-like--regular">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="heart-like--solid">
+                                    <i class="fa-solid fa-heart"></i>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                        <div class="restaurant-cards">
+                            <article>
+                                <h1>Entrées</h1>
+                                <div class="restaurant--menu--list">
+                                    <div class="card">
+                                        <h2>Fricassée d'escargot</h2>
+                                        <div class="card__description">
+                                            <p>Au piment d'Espelette </p>
+                                            <span>25€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Foie gras de canard mi-cuit</h2>
+                                        <div class="card__description">
+                                            <p>Et ses copeaux de truffe noire</p>
+                                            <span>35€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Oeuf au plat</h2>
+                                        <div class="card__description">
+                                            <p>Assaisonné à la truffe sur lit de caviar </p>
+                                            <span>20€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <h1>Plats</h1>
+                                <div class="restaurant--menu--list">
+                                    <div class="card">
+                                        <h2>Filet de boeuf aux herbes</h2>
+                                        <div class="card__description">
+                                            <p>Accompagné de sa ribambelle de légumes</p>
+                                            <span>40€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Parmentier de queue de boeuf</h2>
+                                        <div class="card__description">
+                                            <p>À la truffe noire sur sa purée de panais</p>
+                                            <span>35€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Filet de turbot</h2>
+                                        <div class="card__description">
+                                            <p>Aux agrumes</p>
+                                            <span>44€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <h1>Desserts</h1>
+                                <div class="restaurant--menu--list">
+                                    <div class="card">
+                                        <h2>Paris-Brest</h2>
+                                        <div class="card__description">
+                                            <p>Revisité</p>
+                                            <span>18€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Macaron au chocolat d'exception </h2>
+                                        <div class="card__description">
+                                            <p>Et glace à la vanille de Madagascar</p>
+                                            <span>22€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Mousse au chocolat </h2>
+                                        <div class="card__description">
+                                            <p>Au piment d'Espelette et à la truffe noire</p>
+                                            <span>23€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                         <div class="command">
-                            <a href="#" class="btn"> Commander </a>
+                            <a href="#" class="btn command"> Commander </a>
                         </div>
                     </section>
                 </div>
 
             </main>
-            <footer>
-                <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__wrapper">
                     <h1>OhmyFood</h1>
-
                     <ul>
-                        <li><a href="#">Proposer un restaurant</a></li>
-                        <li><a href="#">Devenir partenaire</a></li>
+                        <li>
+                            <a href="#"> <i class="fa-utensils fas"> </i>Proposer un restaurant</a>
+                        </li>
+                        <li><a href="#"><i class="fa-hands-helping fas"> </i>Devenir partenaire</a></li>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

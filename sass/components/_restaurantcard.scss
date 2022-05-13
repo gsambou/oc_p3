@@ -1,0 +1,36 @@
+.card {
+    margin-bottom: 2.6rem;
+    background: white;
+    border-radius: 2.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 1.6rem;
+    &>* {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        p {
+            font-weight: 300;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.entrees {
+    animation: fadein 2s;
+}
+
+.plats {
+    animation: fadein 4s;
+}
+
+.desserts {
+    animation: fadein 6s;
+}

@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/media.css">
     <title>Ohmyfood</title>
 </head>
 
@@ -25,11 +22,19 @@
                 <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
             </aside>
             <main class="restaurant">
-                <div class="wrapper">
-                    <section class="restaurant-card">
-                        <div class="restaurant-name">
+                <div class="restaurant__wrapper">
+                    <section class="restaurant__card">
+                        <div class="restaurant__card__name">
                             <h1>A la française</h1>
-                            <i class="fa-regular fa-heart"></i>
+                            <div class="heart-like">
+                                <div class="heart-like--regular">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="heart-like--solid">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="restaurant-cards">
                             <article>
@@ -37,9 +42,23 @@
                                 <div class="restaurant--menu--list">
                                     <div class="card">
                                         <h2>Tartare de poulpe acidulé</h2>
-                                        <div class="restaurant--menu--description">
+                                        <div class="card__description">
                                             <p>Aux zests d'orange </p>
                                             <span>25€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Velouté de légumes d'antan</h2>
+                                        <div class="card__description">
+                                            <p>Carotte, panais, topinambour </p>
+                                            <span>35€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Soupe à l'oignon</h2>
+                                        <div class="card__description">
+                                            <p>Revisitée</p>
+                                            <span>20€</span>
                                         </div>
                                     </div>
                                 </div>
@@ -48,10 +67,24 @@
                                 <h1>Plats</h1>
                                 <div class="restaurant--menu--list">
                                     <div class="card">
-                                        <h2>Tartare de poulpe acidulé</h2>
-                                        <div class="restaurant--menu--description">
-                                            <p>Aux zests d'orange </p>
-                                            <span>25€</span>
+                                        <h2>Coquilles Saint-Jacques</h2>
+                                        <div class="card__description">
+                                            <p>Accompagnées d'une purée de panais </p>
+                                            <span>40€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Magret de canard</h2>
+                                        <div class="card__description">
+                                            <p>Et parmentier de pommes de terre</p>
+                                            <span>35€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Pigeonneau d’Ille-et-Vilaine</h2>
+                                        <div class="card__description">
+                                            <p>Sur son lit de gnocchis aux légumes</p>
+                                            <span>44€</span>
                                         </div>
                                     </div>
                                 </div>
@@ -60,10 +93,24 @@
                                 <h1>Desserts</h1>
                                 <div class="restaurant--menu--list">
                                     <div class="card">
-                                        <h2>Tartare de poulpe acidulé</h2>
-                                        <div class="restaurant--menu--description">
-                                            <p>Aux zests d'orange </p>
-                                            <span>25€</span>
+                                        <h2>Pétales de violettes glacés</h2>
+                                        <div class="card__description">
+                                            <p>Et purée de noisettes</p>
+                                            <span>18€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Fondant au chocolat</h2>
+                                        <div class="card__description">
+                                            <p>Revisité </p>
+                                            <span>22€</span>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <h2>Millefeuille croustillant</h2>
+                                        <div class="card__description">
+                                            <p>Myrtilles et pâte d’amande</p>
+                                            <span>23€</span>
                                         </div>
                                     </div>
                                 </div>
@@ -76,13 +123,14 @@
                 </div>
 
             </main>
-            <footer>
-                <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__wrapper">
                     <h1>OhmyFood</h1>
-
                     <ul>
-                        <li><a href="#">Proposer un restaurant</a></li>
-                        <li><a href="#">Devenir partenaire</a></li>
+                        <li>
+                            <a href="#"> <i class="fa-utensils fas"> </i>Proposer un restaurant</a>
+                        </li>
+                        <li><a href="#"><i class="fa-hands-helping fas"> </i>Devenir partenaire</a></li>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

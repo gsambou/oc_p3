@@ -1,0 +1,119 @@
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+
+/* Spinner */
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    animation: spinner 3s forwards;
+}
+
+.loader__animation {
+    border: 10px solid #F3F3F3;
+    border-top: 10px solid $color-primary;
+    border-bottom: 10px solid $color-secondary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear forwards;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 2.4rem;
+    border-bottom: #adb5bd 2px solid;
+    &--logo {
+        max-width: 25rem;
+        margin: 2.4rem auto;
+    }
+}
+
+.presentation {
+    width: 100%;
+    background: #FAFAFA;
+    font-size: 24px;
+    &--localisation {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        background: #F3F3F3;
+        padding: 16px 0px;
+        font-size: 26px;
+        font-weight: 500;
+        border-bottom: #adb5bd 2px solid;
+        i {
+            font-size: 25px;
+        }
+    }
+    &--text-box {
+        text-align: center;
+        padding-top: 3.6rem;
+        padding-bottom: 8rem;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+            font-size: 46px;
+            margin-bottom: 26px;
+        }
+        p {
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.fonctionnement {
+    h1 {
+        margin-top: 5.4rem;
+    }
+    &--wrapper {
+        padding-bottom: 9rem;
+        width: 90%;
+        margin: 0 auto;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.restaurants-menus {
+    background: #FAFAFA;
+    padding-bottom: 5rem;
+    &__wrapper {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        width: 90%;
+        margin: 0 auto;
+        .menu-list {
+            margin-bottom: 3.6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        h1 {
+            font-size: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+}
