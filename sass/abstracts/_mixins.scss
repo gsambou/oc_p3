@@ -1,0 +1,9 @@
+@mixin greenline {
+    &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 45px;
+        background: #99E2D0;
+    }
+}

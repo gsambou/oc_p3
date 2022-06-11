@@ -1,0 +1,126 @@
+.restaurant--menu--list {
+	width: 100%;
+}
+article .card {
+	animation: splash 1100ms normal backwards ease-in-out;
+}
+
+article .card:nth-child(1n) {
+	animation-delay: 0.2s;
+}
+
+article .card:nth-child(2n) {
+	animation-delay: 0.4s;
+}
+
+article .card:nth-child(3n) {
+	animation-delay: 0.6s;
+}
+
+article .card:nth-child(4n) {
+	animation-delay: 0.8s;
+}
+
+.restaurant-cards {
+	padding: 30px 0;
+	border-radius: 40px 40px 0 0;
+	margin-top: -35px;
+	background-color: #f6f6f6;
+	width: 100%;
+}
+
+.restaurant-cards h2 {
+	font-weight: 300;
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-top: 16px;
+	margin-left: 0px;
+	@include greenline;
+}
+
+.restaurant-cards .card {
+	background-color: #ffff;
+	border-radius: 2.5rem;
+
+	margin: 14px 16px 14px 0px;
+	margin-bottom: 2.6rem;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 400ms;
+	width: 98%;
+}
+
+.restaurant-cards .card:hover {
+	box-shadow: 0px 7px 15px 0px #0000003b;
+}
+
+.restaurant-cards .card:hover .price-check {
+	margin-right: 0px;
+}
+
+.restaurant-cards .card div:first-child {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.restaurant-cards .card h3 {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 14px 0 12px 11px;
+	font-size: 1.7rem;
+}
+
+.restaurant-cards .card p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 3px 0 14px 11px;
+	font-size: 0.95rem;
+	font-weight: 300;
+	font-size: 1.7rem;
+}
+
+.restaurant-cards .card .price-check {
+	display: flex;
+	flex-flow: row;
+	padding: 0;
+	margin-right: -61px;
+	transition: 500ms;
+}
+
+.restaurant-cards .card .price-check p {
+	align-self: flex-end;
+	margin-right: 25px;
+	margin-left: 5px;
+	font-weight: 900;
+	line-height: 1rem;
+}
+
+.restaurant-cards .card .price-check i {
+	align-self: center;
+	background-color: #99e2d0;
+	padding: 16px 4px;
+}
+
+.restaurant-cards .card .price-check i:before {
+	font-size: 3.6rem;
+	color: #ffff;
+	display: inline-block;
+	margin: 8px;
+	transition-duration: 0ms;
+	transform: rotate(-1turn);
+}
+
+.restaurant-cards .card:hover i:before {
+	transform: rotate(0turn);
+	transition-duration: 500ms;
+}
+
+.restaurant-cards article {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+}

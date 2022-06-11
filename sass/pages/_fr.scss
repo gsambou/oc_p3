@@ -1,0 +1,74 @@
+header {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-top: 24px;
+	a:link {
+		margin-left: 26px;
+		font-size: 26px;
+	}
+	img {
+		margin: 2.4rem auto;
+		max-width: 25rem;
+	}
+}
+
+.restaurant__card {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 7rem;
+}
+
+/* Liste des restaurants */
+.restaurant {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 3.5rem;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-top: -140px;
+	position: relative;
+	background: #f6f6f6;
+	&__wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+aside img {
+	width: 100%;
+}
+
+.restaurant__card {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 7rem;
+	&__name {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 26px 0px;
+		padding-top: 36px;
+		i {
+			font-size: 36px;
+		}
+		.heart-like {
+			&--regular {
+				margin-right: -36.2px;
+			}
+		}
+	}
+}
+
+.command {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.command a:link {
+	font-weight: 500;
+}
+
+.btn.command {
+	padding: 12px 46px;
+}
