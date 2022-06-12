@@ -3,6 +3,10 @@ header {
 	align-items: center;
 	text-align: center;
 	padding-top: 24px;
+	.fa-solid.fa-arrow-left {
+		opacity: 1;
+		color: black;
+	}
 	a:link {
 		margin-left: 26px;
 		font-size: 26px;
@@ -58,17 +62,4 @@ aside img {
 			}
 		}
 	}
-}
-
-.command {
-	margin: 0 auto;
-	text-align: center;
-}
-
-.command a:link {
-	font-weight: 500;
-}
-
-.btn.command {
-	padding: 12px 46px;
 }

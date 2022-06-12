@@ -86,61 +86,102 @@ body {
 .btn:visited, .btn:link {
   display: inline-block;
   border-radius: 10rem;
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
   text-decoration: none;
   color: white;
   font-weight: 400;
+  font-size: 1.5rem;
   background-image: linear-gradient(355deg, #9356DC, #FF79DA); }
+
+.btn:hover {
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 80%);
+  transform: scale(1.01); }
+
+.command {
+  margin: 0 auto;
+  text-align: center; }
+
+.command a:link {
+  font-weight: 500; }
+
+.btn.command {
+  padding: 12px 46px; }
 
 .menu-card {
   display: block;
   flex-direction: column;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 2.5rem;
+  border-radius: 25px;
   width: 100%;
   margin: 0 auto;
   background: white;
   position: relative;
   text-decoration: none;
   color: black; }
-  .menu-card img {
-    border-top-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
-    height: 39rem;
-    object-fit: cover;
-    width: 100%; }
+  .menu-card a:link {
+    text-decoration: none;
+    color: black; }
   .menu-card span {
-    background: #99E2D0;
-    padding: 1rem 2.4rem;
-    border-radius: 0.8rem;
+    background: #99e2d0;
+    padding: 10px 24px;
+    border-radius: 8px;
     color: #2f9e44;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 20px;
+    right: 20px;
     font-weight: 600;
-    font-size: 2rem; }
+    font-size: 20px; }
+  .menu-card img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 390px;
+    object-fit: cover;
+    width: 100%; }
   .menu-card__text-box {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin: 1.6rem 2.6rem;
+    padding-top: 20px;
+    padding-left: 12px;
     font-size: 1.6rem; }
     .menu-card__text-box .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 0px 12px 24px 10px;
       padding: 0rem 1.2rem 2.4rem 1rem; }
       .menu-card__text-box .text p {
         font-size: 2rem;
         font-weight: 300; }
+      .menu-card__text-box .text h2 {
+        font-size: 2.5rem;
+        text-decoration: none; }
     .menu-card__text-box .text > * {
       margin-bottom: 1rem; }
     .menu-card__text-box i {
       display: flex;
-      font-size: 4.6rem;
-      margin-right: 3.2rem;
+      font-size: 4rem;
       margin-top: 1rem; }
       .menu-card__text-box i:hover, .menu-card__text-box i:focus {
         animation: heart__animated 1s forwards; }
     .menu-card__text-box .fa-regular {
-      margin-right: -37.3rem; }
+      margin-right: 72px;
+      text-decoration: none; }
+  .menu-card .heart-like {
+    display: flex;
+    position: absolute;
+    right: 38px;
+    bottom: 38px; }
+  .menu-card .fa-regular {
+    position: relative;
+    left: 112px;
+    opacity: 1; }
+  .menu-card .fa-solid {
+    opacity: 0; }
+  .menu-card .fa-solid:hover {
+    animation: heart__animated 1s forwards;
+    opacity: 1; }
 
 .steps {
   display: flex;
@@ -335,14 +376,91 @@ article .card:nth-child(4n) {
 
 .container {
   max-width: 768px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 24px; }
+  .header--logo {
+    max-width: 250px;
+    margin: 24px auto; }
+
+.presentation {
+  max-width: 100%;
+  background: #fafafa;
+  font-size: 24px; }
+  .presentation__localisation {
+    background-color: #eaeaea;
+    box-shadow: inset 0 4px 9px -7px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    font-size: 26px;
+    font-weight: 500; }
+    .presentation__localisation .fa-solid.fa-location-dot {
+      opacity: 1; }
+  .presentation__text-box {
+    text-align: center;
+    padding: 36px 0px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center; }
+  .presentation__text-box h2 {
+    font-size: 46px;
+    margin-bottom: 26px; }
+  .presentation__text-box p {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 54px; }
+  .presentation__text-box > * {
+    margin-bottom: 60px; }
+  .presentation__text-box .explorer {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 26px 26px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient(355deg, #9356dc, #ff79da); }
+
+.fonctionnement--wrapper {
+  width: 90%;
   margin: 0 auto;
-  outline: 2px solid red; }
+  padding-bottom: 90px; }
+
+.fonctionnement--wrapper h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 5.4rem;
+  font-size: 4.6rem; }
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-bottom: 50px; }
+  .restaurants--wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px; }
+    .restaurants--wrapper .restaurant-menus-title h2 {
+      font-size: 36px;
+      padding-top: 50px;
+      padding-bottom: 30px; }
+    .restaurants--wrapper .menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 36px; }
 
 /* Spinner */
 .loader {
-  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
   height: 100%;
-  position: fixed;
   background-color: #fff;
   left: 0;
   top: 0;
@@ -351,8 +469,8 @@ article .card:nth-child(4n) {
 
 .loader__animation {
   border: 10px solid #f3f3f3;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -363,74 +481,6 @@ article .card:nth-child(4n) {
   left: 0;
   right: 0;
   bottom: 0; }
-
-.header {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-top: 2.4rem;
-  border-bottom: #adb5bd 2px solid; }
-  .header--logo {
-    max-width: 25rem;
-    margin: 2.4rem auto; }
-
-.presentation {
-  width: 100%;
-  background: #fafafa;
-  font-size: 24px; }
-  .presentation--localisation {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    background: #f3f3f3;
-    padding: 16px 0px;
-    font-size: 26px;
-    font-weight: 500;
-    border-bottom: #adb5bd 2px solid; }
-    .presentation--localisation i {
-      font-size: 25px; }
-  .presentation--text-box {
-    text-align: center;
-    padding-top: 3.6rem;
-    padding-bottom: 8rem;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center; }
-    .presentation--text-box h1 {
-      font-size: 46px;
-      margin-bottom: 26px; }
-    .presentation--text-box p {
-      font-size: 30px;
-      font-weight: 300;
-      margin-bottom: 60px; }
-
-.fonctionnement h1 {
-  margin-top: 5.4rem; }
-
-.fonctionnement--wrapper {
-  padding-bottom: 9rem;
-  width: 90%;
-  margin: 0 auto; }
-  .fonctionnement--wrapper h1 {
-    font-size: 3rem; }
-
-.restaurants-menus {
-  background: #fafafa;
-  padding-bottom: 5rem; }
-  .restaurants-menus__wrapper {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    width: 90%;
-    margin: 0 auto; }
-    .restaurants-menus__wrapper .menu-list {
-      margin-bottom: 3.6rem;
-      display: flex;
-      flex-direction: column;
-      gap: 3rem; }
-    .restaurants-menus__wrapper h1 {
-      font-size: 3rem;
-      padding-bottom: 3rem; }
 
 @media screen and (min-width: 769px) {
   .container {
@@ -461,11 +511,28 @@ article .card:nth-child(4n) {
   .restaurant-cards article {
     min-width: 350px; } }
 
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 380px;
+    margin: 0 auto; }
+  .presentation__text-box h2 {
+    font-size: 3rem; }
+  .presentation__text-box p {
+    font-size: 2rem; }
+  .fonctionnement--wrapper h2 {
+    font-size: 3rem; }
+  .steps p {
+    padding: 2.6rem 1.6rem;
+    font-size: 1.5rem; } }
+
 header {
   display: flex;
   align-items: center;
   text-align: center;
   padding-top: 24px; }
+  header .fa-solid.fa-arrow-left {
+    opacity: 1;
+    color: black; }
   header a:link {
     margin-left: 26px;
     font-size: 26px; }
@@ -509,13 +576,3 @@ aside img {
       font-size: 36px; }
     .restaurant__card__name .heart-like--regular {
       margin-right: -36.2px; }
-
-.command {
-  margin: 0 auto;
-  text-align: center; }
-
-.command a:link {
-  font-weight: 500; }
-
-.btn.command {
-  padding: 12px 46px; }

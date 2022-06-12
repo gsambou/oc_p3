@@ -1,12 +1,30 @@
 .btn {
-    &:visited,
-    &:link {
-        display: inline-block;
-        border-radius: 10rem;
-        padding: 2rem 4rem;
-        text-decoration: none;
-        color: white;
-        font-weight: 400;
-        background-image: linear-gradient(355deg, $color-primary, $color-secondary);
-    }
+	&:visited,
+	&:link {
+		display: inline-block;
+		border-radius: 10rem;
+		padding: 4rem 4rem;
+		text-decoration: none;
+		color: white;
+		font-weight: 400;
+		font-size: 1.5rem;
+		background-image: linear-gradient(355deg, $color-primary, $color-secondary);
+	}
+	&:hover {
+		background: linear-gradient(350deg, #9356dc 0%, #ff79da 80%);
+		transform: scale(1.01);
+	}
+}
+
+.command {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.command a:link {
+	font-weight: 500;
+}
+
+.btn.command {
+	padding: 12px 46px;
 }

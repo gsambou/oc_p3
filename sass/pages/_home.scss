@@ -1,14 +1,109 @@
 .container {
 	max-width: 768px;
 	margin: 0 auto;
-	outline: 2px solid red;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-top: 24px;
+
+	&--logo {
+		max-width: 250px;
+		margin: 24px auto;
+	}
+}
+
+.presentation {
+	max-width: 100%;
+	background: #fafafa;
+	font-size: 24px;
+	&__localisation {
+		background-color: #eaeaea;
+		box-shadow: inset 0 4px 9px -7px rgba(0, 0, 0, 0.7);
+		text-align: center;
+		display: flex;
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0px;
+		font-size: 26px;
+		font-weight: 500;
+		.fa-solid.fa-location-dot {
+			opacity: 1;
+		}
+	}
+	&__text-box {
+		text-align: center;
+		padding: 36px 0px;
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__text-box h2 {
+		font-size: 46px;
+		margin-bottom: 26px;
+	}
+	&__text-box p {
+		font-size: 30px;
+		font-weight: 300;
+		margin-bottom: 54px;
+	}
+	&__text-box > * {
+		margin-bottom: 60px;
+	}
+	&__text-box .explorer {
+		display: inline-block;
+		border-radius: 100px;
+		padding: 26px 26px;
+		text-decoration: none;
+		color: white;
+		font-weight: 600;
+		background-image: linear-gradient(355deg, #9356dc, #ff79da);
+	}
+}
+
+.fonctionnement {
+	&--wrapper {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 90px;
+	}
+	&--wrapper h2 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 5.4rem;
+		font-size: 4.6rem;
+	}
+}
+
+.restaurants {
+	background-color: #f6f6f6;
+	padding-bottom: 50px;
+	&--wrapper {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		.restaurant-menus-title h2 {
+			font-size: 36px;
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+		.menu-list {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			margin-bottom: 36px;
+		}
+	}
 }
 
 /* Spinner */
 .loader {
-	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
 	height: 100%;
-	position: fixed;
 	background-color: #fff;
 	left: 0;
 	top: 0;
@@ -18,8 +113,8 @@
 
 .loader__animation {
 	border: 10px solid #f3f3f3;
-	border-top: 10px solid $color-primary;
-	border-bottom: 10px solid $color-secondary;
+	border-top: 10px solid #9356dc;
+	border-bottom: 10px solid #ff79da;
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
@@ -31,91 +126,6 @@
 	right: 0;
 	bottom: 0;
 }
-
-.header {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	padding-top: 2.4rem;
-	border-bottom: #adb5bd 2px solid;
-	&--logo {
-		max-width: 25rem;
-		margin: 2.4rem auto;
-	}
-}
-
-.presentation {
-	width: 100%;
-	background: #fafafa;
-	font-size: 24px;
-	&--localisation {
-		display: flex;
-		gap: 30px;
-		justify-content: center;
-		align-items: center;
-		background: #f3f3f3;
-		padding: 16px 0px;
-		font-size: 26px;
-		font-weight: 500;
-		border-bottom: #adb5bd 2px solid;
-		i {
-			font-size: 25px;
-		}
-	}
-	&--text-box {
-		text-align: center;
-		padding-top: 3.6rem;
-		padding-bottom: 8rem;
-		width: 70%;
-		margin: 0 auto;
-		text-align: center;
-		h1 {
-			font-size: 46px;
-			margin-bottom: 26px;
-		}
-		p {
-			font-size: 30px;
-			font-weight: 300;
-			margin-bottom: 60px;
-		}
-	}
-}
-
-.fonctionnement {
-	h1 {
-		margin-top: 5.4rem;
-	}
-	&--wrapper {
-		padding-bottom: 9rem;
-		width: 90%;
-		margin: 0 auto;
-		h1 {
-			font-size: 3rem;
-		}
-	}
-}
-
-.restaurants-menus {
-	background: #fafafa;
-	padding-bottom: 5rem;
-	&__wrapper {
-		padding-top: 6rem;
-		padding-bottom: 3rem;
-		width: 90%;
-		margin: 0 auto;
-		.menu-list {
-			margin-bottom: 3.6rem;
-			display: flex;
-			flex-direction: column;
-			gap: 3rem;
-		}
-		h1 {
-			font-size: 3rem;
-			padding-bottom: 3rem;
-		}
-	}
-}
-//  A ranger
 @media screen and (min-width: 769px) {
 	.container {
 		max-width: 992px;
@@ -154,5 +164,25 @@
 	}
 	.restaurant-cards article {
 		min-width: 350px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		max-width: 380px;
+		margin: 0 auto;
+	}
+	.presentation__text-box h2 {
+		font-size: 3rem;
+	}
+	.presentation__text-box p {
+		font-size: 2rem;
+	}
+	.fonctionnement--wrapper h2 {
+		font-size: 3rem;
+	}
+	.steps p {
+		padding: 2.6rem 1.6rem;
+		font-size: 1.5rem;
 	}
 }
